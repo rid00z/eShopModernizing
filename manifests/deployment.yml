@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ridzeshopmodernizing 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ridzeshopmodernizing
+  template:
+    metadata:
+      labels:
+        app: ridzeshopmodernizing 
+    spec:
+      containers:
+        - name: ridzeshopmodernizing 
+          image: appmodreg.azurecr.io/ridzeshopmodernizing
+          ports:
+          - containerPort: 80
