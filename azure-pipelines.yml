@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'b424fd68-4135-4d3c-82f4-d620d098c3fa'
   imageRepository: 'ridzeshopmodernizing'
   containerRegistry: 'appmodreg.azurecr.io'
-  dockerfilePath: '/eShopModernizedMVCSolution/src/eShopModernizedMVC/Dockerfile'
+  dockerfilePath: 'eShopModernizedMVCSolution/src/eShopModernizedMVC/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'appmodreg381017dd-auth'
 
